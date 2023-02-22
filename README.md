@@ -24,7 +24,7 @@
 ```bash
 #clone the project
 
-$ git clone https://github.com/deivid94/javascript_for_backend_fundamentos.git
+$ git clone https://github.com/deivid94/API_REST.git
  ```
 
 
