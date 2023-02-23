@@ -30,19 +30,20 @@ server.post('/cursos',(req, res)=> {
 
 //Atualizando cursos
 
-server.put('/cursos/:index', (req, res)=>{
-    const { index }= req.params
+server.put('/cursos/:index', (req, res) => {
+    const { index } = req.params
     const { name } = req.body
+    cursos[index] = name
 
-    cursos[index = name]
     return res.json(cursos)
 })
 
-server.delete('cursos/:index',(req, res)=>{
-    const { index } = req.params
-    cursos.splice(index,1)
-    
-    return res.json("Curso deletado com sucesso")
+server.delete('/cursos/:index', (req, res) => {
+  const { index } = req.params
+  cursos.splice(index, 1)
+
+  return res.json("Curso deletado com sucesso")
+ 
 })
 
 server.listen(3000)
